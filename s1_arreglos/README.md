@@ -23,3 +23,21 @@ Desarrollar un programa que lea de la entrada estándar un array de enteros y de
 
 ## Ejercicio 8
 Escribe un programa que defina un array de números y calcule si existe algún número en el array cuyo valor equivale a la suma del resto de números del array.
+
+# Arreglos con búsqueda en C++
+
+## Programa 1: Búsqueda Lineal
+
+Escribe un programa en C++ que implemente la búsqueda lineal para determinar la posición de un número específico dentro de un arreglo. Si el número no se encuentra en el arreglo, el programa retorna -1.
+
+### Descripción:
+**Entrada**: Un arreglo de enteros, por ejemplo `{13, 14, 15, 11, 17, 16, 5}`, y un número a buscar, como `11`.
+**Salida**: La posición del número buscado en el arreglo, o `-1` si el número no está presente.
+
+## Programa 2: Búsqueda Binaria
+
+Escribe un programa en C++ que implemente la búsqueda binaria para localizar la posición de un número en un arreglo ordenado. Si el número no se encuentra, el programa imprime -1.
+
+### Descripción:
+**Entrada**: Un arreglo ordenado de enteros, por ejemplo `{2, 5, 8, 12, 16, 23}`, y un número a buscar, como `16`.
+**Salida**: La posición del número objetivo en el arreglo o `-1` si el número no se encuentra.
