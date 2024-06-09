@@ -1,10 +1,7 @@
 // Bubble Sort (Método Burbuja)
 // Este algoritmo de ordenamiento es conceptualmente simple pero ineficiente para grandes conjuntos de datos.
 // Presenta una complejidad temporal de O(n^2) en el peor y el caso medio, lo que lo hace lento comparado con algoritmos más avanzados.
-// Realiza múltiples pasadas sobre el arreglo completo para ordenar los elementos, lo que resulta en un alto número de comparaciones y operaciones de intercambio (swaps).
-#include <iostream>
-using namespace std;
-
+// Realiza multiples pasadas sobre el arreglo completo para ordenar los elementos, lo que resulta en un alto número de comparaciones y operaciones de intercambio (swaps).
 #include <iostream>
 using namespace std;
 
@@ -13,7 +10,7 @@ int main() {
 	int tamano = sizeof(arreglo) / sizeof(arreglo[0]);
 	int i, j, aux;
 	
-	// Metodo burbuja mejorado
+	// Metodo burbuja
 	for(i = 0; i < tamano; i++) {
 		for(j = 0; j < tamano; j++) { 
 			if (arreglo[j] > arreglo[j + 1]) { 
