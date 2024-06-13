@@ -1,0 +1,41 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main() {
+	
+	int numeros[5];
+	int i, j, aux, min;
+	
+	// Solicitar al usuario que ingrese los números
+	for (i = 0; i < 5; i++) {
+		cout << "Ingrese numero " << i + 1 << ": ";
+		cin >> numeros[i];
+	}
+	
+	// Bucle para recorrer cada elemento del arreglo
+	for (i = 0; i < 5; i++) {
+		min = i;
+		// Bucle para encontrar el índice del valor mínimo en el resto del arreglo
+		for (j = i + 1; j < 5; j++) {
+			if (numeros[j] < numeros[min]) {
+				min = j;
+			}
+		}
+		// Intercambiar el elemento actual con el elemento mínimo encontrado
+		aux = numeros[i];
+		numeros[i] = numeros[min];
+		numeros[min] = aux;
+	}
+	
+	// Imprimir el arreglo ordenado
+	cout << "Ordenando por selección: ";
+	for (i = 0; i < 5; i++) {
+		cout << numeros[i] << " ";
+	}
+	
+	getch();
+	return 0;
+}
+
+
