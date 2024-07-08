@@ -5,28 +5,33 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
 	int arreglo[] = {64, 34, 25, 12, 22, 11, 90};
 	int tamano = sizeof(arreglo) / sizeof(arreglo[0]);
 	int i, j, aux;
-	
+
 	// Metodo burbuja
-	for(i = 0; i < tamano; i++) {
-		for(j = 0; j < tamano; j++) { 
-			if (arreglo[j] > arreglo[j + 1]) { 
+	for (i = 0; i < tamano; i++)
+	{
+		for (j = 0; j < tamano; j++)
+		{
+			if (arreglo[j] > arreglo[j + 1])
+			{
 				aux = arreglo[j];
 				arreglo[j] = arreglo[j + 1];
 				arreglo[j + 1] = aux;
 			}
 		}
 	}
-	
+
 	// Imprimir el arreglo ordenado en orden ascendente
 	cout << "Ordenado Ascendente: ";
-	for (i = 0; i < tamano; i++) {
+	for (i = 0; i < tamano; i++)
+	{
 		cout << arreglo[i] << " ";
 	}
 	cout << endl;
-	
+
 	return 0;
 }

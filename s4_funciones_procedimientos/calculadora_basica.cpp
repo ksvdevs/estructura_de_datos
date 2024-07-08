@@ -1,20 +1,22 @@
 #include <iostream>
 using namespace std;
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
 	char operador;
 	float num1, num2;
-	
-	cout << "Ingrese el primer número: ";
+
+	cout << "Ingrese el primer nï¿½mero: ";
 	cin >> num1;
-	
+
 	cout << "Ingrese el operador (+, -, *, /): ";
 	cin >> operador;
-	
-	cout << "Ingrese el segundo número: ";
+
+	cout << "Ingrese el segundo nï¿½mero: ";
 	cin >> num2;
-	
-	switch (operador) {
+
+	switch (operador)
+	{
 	case '+':
 		cout << "Resultado: " << (num1 + num2) << endl;
 		break;
@@ -25,16 +27,19 @@ int main(int argc, char *argv[]) {
 		cout << "Resultado: " << (num1 * num2) << endl;
 		break;
 	case '/':
-		if (num2 != 0) {
+		if (num2 != 0)
+		{
 			cout << "Resultado: " << (num1 / num2) << endl;
-		} else {
+		}
+		else
+		{
 			cout << "Error: No se puede dividir por cero." << endl;
 		}
 		break;
 	default:
-		cout << "Operador no válido." << endl;
+		cout << "Operador no vï¿½lido." << endl;
 		break;
 	}
-	
+
 	return 0;
 }
